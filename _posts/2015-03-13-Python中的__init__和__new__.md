@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python中的__init__和__new__"
+title: "__init__和__new__"
 date: 2015-03-13
 comments: true
 categories: Python

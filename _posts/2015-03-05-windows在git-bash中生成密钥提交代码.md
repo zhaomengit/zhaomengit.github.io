@@ -1,6 +1,6 @@
 ---
 layout: post
-title: windows下生成ssh-key提交代码
+title: "使用git提交代码"
 modified: 2014-12-19
 categories: Linux
 tags: git

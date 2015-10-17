@@ -1,1 +1,1 @@
-请移步 <http://liberize.me/life/about-this-blog-template.html>。
+请移步 <http://zhaomengit.gitcafe.me>。

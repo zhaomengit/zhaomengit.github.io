@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python-Decorator和函数式编程"
+title: "Python-Decorator"
 date: 2015-03-06 16:25:06 -0700
 comments: true
 categories: Python

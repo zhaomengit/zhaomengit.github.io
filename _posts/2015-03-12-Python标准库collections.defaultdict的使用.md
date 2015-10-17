@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python标准库collections.defaultdict的使用"
+title: "使用collections.defaultdict"
 date: 2015-03-12
 comments: true
 categories: Python

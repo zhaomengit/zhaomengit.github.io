@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python中的@classmethod和@staticmethod"
+title: "classmethod和staticmethod"
 date: 2015-03-08
 comments: true
 categories: Python

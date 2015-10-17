@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python库中functools中@waps的使用"
+title: "functools中@waps的使用"
 date: 2015-03-09
 comments: true
 categories: Python

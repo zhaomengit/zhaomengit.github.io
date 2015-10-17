@@ -79,7 +79,7 @@ a:hover, a:active { outline: none; }
 
 /*  Main  */
 #wrap {
-  width: 1000px;
+  width: 1100px;
   margin: 20px auto;
 }
 
@@ -134,7 +134,7 @@ a:hover, a:active { outline: none; }
 }
 
 #sidebar {
-  width: 271px;
+  width: 285px;
   height: auto;
   float: left;
   font-size: 116%;

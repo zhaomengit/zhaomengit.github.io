@@ -4,7 +4,7 @@ title: "Sublime text插件推荐"
 date: 2015-10-17
 comments: true
 category: 工具
-tags: Sublime Text
+tags: SublimeText
 ---
 ##Sublime text插件推荐
 

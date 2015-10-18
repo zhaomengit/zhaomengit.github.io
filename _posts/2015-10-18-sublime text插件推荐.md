@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "vim复制多行"
+title: "Sublime text插件推荐"
 date: 2015-10-17
 comments: true
 category: 工具

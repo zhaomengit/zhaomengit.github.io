@@ -1,1 +1,1 @@
-请移步 <http://zhaomengit.gitcafe.me>。
+请移步 <http://zhaomengit.gitcafe.io>。

@@ -3,7 +3,7 @@ layout: post
 title: "Python logging"
 date: 2015-05-15
 comments: true
-categories: Python
+category: Python
 tag: Python
 ---
 

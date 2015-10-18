@@ -3,7 +3,7 @@ layout: post
 title: "functools中@waps的使用"
 date: 2015-03-09
 comments: true
-categories: Python
+category: Python
 tags: 函数式编程
 ---
 ###functools中@waps

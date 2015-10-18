@@ -3,7 +3,7 @@ layout: post
 title: "Python中super()解析"
 date: 2015-03-13
 comments: true
-categories: Python
+category: Python
 tags: Python
 ---
 

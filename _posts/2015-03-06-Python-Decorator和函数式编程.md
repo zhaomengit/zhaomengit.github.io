@@ -3,7 +3,7 @@ layout: post
 title: "Python-Decorator"
 date: 2015-03-06 16:25:06 -0700
 comments: true
-categories: Python
+category: Python
 tags: 函数式编程
 ---
 ### 函数（Functions）是第一个对象

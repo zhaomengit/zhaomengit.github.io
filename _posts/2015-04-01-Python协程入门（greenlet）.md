@@ -3,7 +3,7 @@ layout: post
 title: "Python协程入门（greenlet）"
 date: 2015-04-01
 comments: true
-categories: Python
+category: Python
 tags: Python
 ---
 ###一个例子

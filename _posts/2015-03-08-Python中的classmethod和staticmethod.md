@@ -3,7 +3,7 @@ layout: post
 title: "classmethod和staticmethod"
 date: 2015-03-08
 comments: true
-categories: Python
+category: Python
 tags: 函数式编程
 ---
 `@classmethod` 和 `@staticmethod` 相似, 但是有以下区别: `@classmethod` 的第一个参数必须是`class object`的引用, `@staticmethod` 则不需要.

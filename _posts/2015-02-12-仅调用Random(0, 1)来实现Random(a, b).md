@@ -3,7 +3,7 @@ layout: post
 title: "仅调用Random(0, 1)来实现Random(a, b)"
 date: 2015-02-16 16:25:06 -0700
 comments: true
-categories: 算法
+category: 算法
 ---
 ### 题目描述
 如何在只调用`RANDOM(0,1)`来实现`RANDOM(a, b)`

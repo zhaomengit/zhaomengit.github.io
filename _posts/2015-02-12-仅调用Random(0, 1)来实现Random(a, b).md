@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "调用Random(0,1)实现Random(a,b)"
+title: "调用Random实现Random"
 date: 2015-02-16 16:25:06 -0700
 comments: true
 category: 算法

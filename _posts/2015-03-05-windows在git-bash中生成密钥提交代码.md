@@ -2,9 +2,9 @@
 layout: post
 title: "使用git提交代码"
 modified: 2014-12-19
+comments: true
 category: Linux
 tags: git
-comments: true
 ---
 
 ###官方文档

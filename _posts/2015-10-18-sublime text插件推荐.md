@@ -35,3 +35,6 @@ tags: SublimeText
 
 ###Markdowm preview
 markdown标记书写，预览
+
+###备注
+sublime text教程推荐 (http://zh.lucida.me/blog/sublime-text-complete-guide/)

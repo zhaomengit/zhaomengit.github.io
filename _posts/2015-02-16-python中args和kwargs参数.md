@@ -4,6 +4,7 @@ title: "Python中args和kwargs参数"
 date: 2015-02-16 16:25:06 -0700
 comments: true
 category: Python
+tags: Python
 ---
 ### *args
 通过使用\*args语法，一个python函数在它的参数列表中可以接受多个位置参数。 

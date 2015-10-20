@@ -4,7 +4,9 @@ title: "Python yield 使用浅析"
 date: 2015-02-16 16:25:06 -0700
 comments: true
 category: Python
+tags: Python
 ---
+
 > 带有 yield 的函数在 Python 中被称之为 generator（生成器），何谓 generator ？
 > 先抛开 generator，以一个常见的编程题目来展示 yield 的概念.
 

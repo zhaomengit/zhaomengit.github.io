@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pageaboutme
 title: "关于我"
 description: "information about me"
 group: navigation

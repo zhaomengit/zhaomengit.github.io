@@ -3,7 +3,7 @@ layout: post
 title: "Codeblock和Cygwin配置"
 date: 2015-10-23
 comments: true
-category: 工具配置
+category: 工具
 tags: Cygwin
 ---
 

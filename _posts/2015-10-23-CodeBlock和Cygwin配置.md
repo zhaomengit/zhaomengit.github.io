@@ -15,28 +15,28 @@ tags: Cygwin
 2. 下载Codeblock然后安装
 3. 配置Codeblock
 
-    * Settings-->Compiler-->Global Complier Settings
-    * 选择"Cygwin Compiler", 点击"Copy"按钮
+    1. Settings-->Compiler-->Global Complier Settings
+    2. 选择"Cygwin Compiler", 点击"Copy"按钮
 
     配置如下图:
-    ![配置路径](/images/Cygwin_sd.JPG)
-    ![配置toolchain](/images/Cygwin_toolchain.JPG)
+        ![配置路径](/images/Cygwin_sd.JPG)
+        ![配置toolchain](/images/Cygwin_toolchain.JPG)
 
 4. 配置gdb注册表,如果不配置调试的时候就出现以下错误:
 
-```
-Cannot open file: >>/cygdrive/e/code/test/main.cpp
-At >>/cygdrive/e/code/test/main.cpp:17
-```
+    ```
+    Cannot open file: >>/cygdrive/e/code/test/main.cpp
+    At >>/cygdrive/e/code/test/main.cpp:17
+    ```
 
 5. 注册表配置代码:
 
-```
-手动增加以下注册表项:
-HKEY_CURRENT_USER\\Software\\Cygnus Solutions\\Cygwin\\mounts v2
+    ```
+    手动增加以下注册表项:
+    HKEY_CURRENT_USER\\Software\\Cygnus Solutions\\Cygwin\\mounts v2
 
-HKEY_LOCAL_MACHINE\\Software\\Cygnus Solutions\\Cygwin\\mounts v2
+    HKEY_LOCAL_MACHINE\\Software\\Cygnus Solutions\\Cygwin\\mounts v2
 
-然后右击,新建字符串项,名称:cygdrive prefix 数据值:/cygdrive
+    然后右击,新建字符串项,名称:cygdrive prefix 数据值:/cygdrive
 
-```
+    ```

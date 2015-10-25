@@ -111,7 +111,8 @@ Local.sin_addr.s_addr = inet_addr(“192.168.0.100”);
 
 WinSocke库是这样处理的：谁绑定的最明确，谁获取数据包。显然，第二种bind将获取到达的数据包。如果避免这种情况呢？使用 SO_EXECLUSINEADDRUSE选项。需要注意的是，此选项在Windows NT 4 Service Pack 4以后（包括SP4）才可以使用。
 
-示例代码：
+示例代码： 
+
 ```
 #ifndef SO_EXECLUSINEADDRUSE
 #define SO_EXECLUSINEADDRUSE ((int)(~SO_REUSEADDR))

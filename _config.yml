@@ -7,9 +7,9 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 paginate: 10
 encoding: utf-8
 highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
+# markdown: redcarpet
+# redcarpet:
+#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -70,7 +70,7 @@ JB :
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  ASSET_PATH : false
+  ASSET_PATH : /assets/themes/twitter
   IMAGE_PATH : false
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.

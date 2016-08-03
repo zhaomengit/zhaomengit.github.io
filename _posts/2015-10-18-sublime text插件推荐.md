@@ -7,9 +7,9 @@ category: 工具
 tags: SublimeText
 ---
 
-##Sublime text插件推荐
+## Sublime text插件推荐
 
-###Package Control
+### Package Control
 这个是安装插件的基础
 
 ###Colorsublime
@@ -19,23 +19,23 @@ tags: SublimeText
     Crtl + Shift + p # 启动命令
     Colorsublime:Install Theme
 
-###SyncedSidebarBg
+### SyncedSidebarBg
 这个插件让你的左侧边栏的主题和中央编辑器同步背景
 
-###SiderBarEnhancements
+### SiderBarEnhancements
 左侧边栏增强
 
-###PrettyJson
+### PrettyJson
 格式化Json
 
-###ConvertToUTF8
+### ConvertToUTF8
 可以保存UTF-8格式文件
 
-###IMESupport
+### IMESupport
 输入框跟随
 
-###Markdowm preview
+### Markdowm preview
 markdown标记书写，预览
 
-###备注
+### 备注
 sublime text教程推荐 (http://zh.lucida.me/blog/sublime-text-complete-guide/)

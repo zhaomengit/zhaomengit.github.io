@@ -4,7 +4,7 @@ theme :
   name : twitter
 ---
 {% include JB/setup %}
-{% capture ASSET_DIR %}/assets/themes/{{ page.theme.name }}{% endcapture %}
+{% capture ASSET_DIR %}/assets/themes/{{ layout.theme.name }}{% endcapture %}
 
 /*  HTML5 Boilerplate  */
 

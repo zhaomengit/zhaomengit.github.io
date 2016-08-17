@@ -10,10 +10,10 @@ tags: Python
 > 带有 yield 的函数在 Python 中被称之为 generator（生成器），何谓 generator ？
 > 先抛开 generator，以一个常见的编程题目来展示 yield 的概念.
 
-##如何生成斐波那契数列
+## 如何生成斐波那契数列
 斐波那契（Fibonacci）数列是一个非常简单的递归数列，除第一个和第二个数外，任意一个数都可由前两个数相加得到。用计算机程序输出斐波那契數列的前 N 个数是一个非常简单的问题，许多初学者都可以轻易写出如下函数：
 
-###清单 1. 简单输出斐波那契数列前 N 个数 
+### 清单 1. 简单输出斐波那契数列前 N 个数 
 ```python
 def fab(max): 
     n, a, b = 0, 0, 1 
@@ -35,7 +35,7 @@ def fab(max):
 
 要提高 fab 函数的可复用性，最好不要直接打印出数列，而是返回一个 List。以下是 fab 函数改写后的第二个版本：
 
-###清单 2. 输出斐波那契数列前 N 个数第二版
+### 清单 2. 输出斐波那契数列前 N 个数第二版
 ```python
 def fab(max): 
     n, a, b = 0, 0, 1 
@@ -61,7 +61,7 @@ def fab(max):
 改写后的 fab 函数通过返回 List能满足复用性的要求，但是更有经验的开发者会指出，该函数在运行中占用的内存会随着参数 max 的增大而增大，如果要控制内存占用，最好不要用 List来保存中间结果，而是通过 iterable 对象来迭代。
 例如，在 Python2.x 中，代码：
 
-###清单 3. 通过 iterable 对象来迭代
+### 清单 3. 通过 iterable 对象来迭代
 
 ```python
 for i in range(1000): pass
@@ -77,7 +77,7 @@ for i in xrange(1000): pass
 
 利用 iterable 我们可以把 fab 函数改写为一个支持 iterable 的 class，以下是第三个版本的 Fab：
 
-###清单 4. 第三个版本 
+### 清单 4. 第三个版本 
 ```python
 class Fab(object): 
 
@@ -110,7 +110,7 @@ Fab 类通过 next() 不断返回数列的下一个数，内存占用始终为�
 然而，使用 class 改写的这个版本，代码远远没有第一版的 fab函数来得简洁。
 如果我们想要保持第一版 fab 函数的简洁性，同时又要获得 iterable 的效果，yield 就派上用场了：
 
-###清单 5. 使用 yield 的第四版 
+### 清单 5. 使用 yield 的第四版 
 
 ```python
 def fab(max): 
@@ -133,7 +133,7 @@ def fab(max):
 
 也可以手动调用 fab(5) 的 next() 方法（因为 fab(5) 是一个 generator 对象，该对象具有 next() 方法），这样我们就可以更清楚地看到 fab 的执行流程：
 
-###清单 6. 执行流程 
+### 清单 6. 执行流程 
 
     >>> f = fab(5) 
     >>> f.next() 
@@ -161,7 +161,7 @@ yield 的好处是显而易见的，把一个函数改写为一个 generator 就
 
 如何判断一个函数是否是一个特殊的 generator 函数？可以利用 isgeneratorfunction 判断：
 
-###清单 7. 使用 isgeneratorfunction 判断 
+### 清单 7. 使用 isgeneratorfunction 判断 
 
     >>> from inspect import isgeneratorfunction 
     >>> isgeneratorfunction(fab) 
@@ -169,7 +169,7 @@ yield 的好处是显而易见的，把一个函数改写为一个 generator 就
     
 要注意区分 fab 和 fab(5)，fab 是一个 generator function，而 fab(5) 是调用 fab 返回的一个 generator，好比类的定义和类的实例的区别：
 
-###清单 8. 类的定义和类的实例 
+### 清单 8. 类的定义和类的实例 
 
     >>> import types 
     >>> isinstance(fab, types.GeneratorType) 
@@ -206,12 +206,12 @@ fab 是无法迭代的，而 fab(5) 是可迭代的：
     >>> print 'f2:', f2.next() 
     f2: 5
     
-##return 的作用
+## return 的作用
 在一个 generator function 中，如果没有 return，则默认执行至函数完毕，如果在执行过程中 return，则直接抛出 StopIteration 终止迭代。
 ##另一个例子
 另一个 yield 的例子来源于文件读取。如果直接对文件对象调用 read() 方法，会导致不可预测的内存占用。好的方法是利用固定长度的缓冲区来不断读取文件内容。通过 yield，我们不再需要编写读文件的迭代类，就可以轻松实现文件读取：
 
-###清单 9. 另一个 yield 的例子 
+### 清单 9. 另一个 yield 的例子 
 
 ```python
 def read_file(fpath): 
@@ -227,5 +227,5 @@ def read_file(fpath):
 
 以上仅仅简单介绍了 yield 的基本概念和用法，yield 在 Python 3 中还有更强大的用法.
 
-##参考资料
+## 参考资料
 本文来自[developerWorks 中文社区](http://www.ibm.com/developerworks/cn/opensource/os-cn-python-yield/),作者廖雪峰

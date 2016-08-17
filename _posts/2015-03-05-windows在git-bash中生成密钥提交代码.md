@@ -7,9 +7,9 @@ category: Linux
 tags: git
 ---
 
-###官方文档
+### 官方文档
 https://help.github.com/articles/generating-ssh-keys/
-###注意一:
+### 注意一:
 
 在第3步中有个命令是这样的
 
@@ -24,7 +24,7 @@ https://help.github.com/articles/generating-ssh-keys/
 
 单引号 <em>'</em> 转换成 反引号 <em>`</em>
 
-###注意二
+### 注意二
 
 通过命令
 
@@ -40,7 +40,7 @@ https://help.github.com/articles/generating-ssh-keys/
     User git
     IdentityFile G:/myblog/key/gitkey
 
-###注意三
+### 注意三
 
 git支持很多种工作流程，我们采用的一般是这样，远程创建一个主分支，本地每人创建功能分支，日常工作流程如下：
 

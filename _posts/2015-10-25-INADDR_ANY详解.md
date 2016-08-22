@@ -7,7 +7,7 @@ category: Linux
 tags: Linux
 ---
 
-###INADDR_ANY的用法
+### INADDR_ANY的用法
 
 网络程序服务器端socket结构,端口使用`INADDR_ANY`  
 
@@ -136,6 +136,6 @@ bind(socket, (LPSOCKADDR)&Local, sizeof(SOCKADDR_IN)
 
 这是因为对UDP使用connect()并不会真正向目标地址发送任何建立连 接的数据，也不会验证到目标地址的可达性。它只是将目标地址的信息记录在内部的socket数据结构之中，共以后使用。只有当调用 sendto()/send()时,由系统内核根据路由表决定由哪一个地址（网卡）发送UDP packet.
 
-###INADDR_LOOPBACK和INADDR_ANY的区别
+### INADDR_LOOPBACK和INADDR_ANY的区别
 
 INADDR_ANY是ANY，是绑定地址0.0.0.0上的监听, 能收到任意一块网卡的连接； INADDR_LOOPBACK, 也就是绑定地址LOOPBAC, 往往是127.0.0.1, 只能收到127.0.0.1上面的连接请求

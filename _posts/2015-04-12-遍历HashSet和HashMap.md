@@ -6,7 +6,7 @@ category: Java
 tag: Java
 ---
 
-###遍历HashSet
+### 遍历HashSet
 
 ```java
 Set<String> set = new HashSet<String>();
@@ -26,7 +26,7 @@ for(String str : set) {
 }
 ```
 
-###遍历HashMap
+### 遍历HashMap
 
 ```java
 Map<String, String> map = new HashMap<String, String>();

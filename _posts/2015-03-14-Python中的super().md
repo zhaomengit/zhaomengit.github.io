@@ -7,7 +7,7 @@ category: Python
 tags: Python
 ---
 
-###super
+### super
 
     super(type[, object-or-type]) 
 
@@ -150,5 +150,5 @@ class F(E, D):
         super(F, self).__init__()
         print "leave F"
 ```
-###参考资料
+### 参考资料
 * [官方文档：Unifying types and classes in Python 2.2](https://www.python.org/download/releases/2.2/descrintro/#cooperation)

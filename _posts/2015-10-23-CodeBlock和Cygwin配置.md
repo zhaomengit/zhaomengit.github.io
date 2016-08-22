@@ -7,7 +7,7 @@ category: 工具
 tags: Cygwin
 ---
 
-###使用Codeblock和Cygwin在win7下开发Linux程序
+### 使用Codeblock和Cygwin在win7下开发Linux程序
 
 环境:win7,codeblock13.12,Cygwin(这个木有版本貌似)
 

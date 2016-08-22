@@ -12,7 +12,7 @@ tags: SublimeText
 ### Package Control
 这个是安装插件的基础
 
-###Colorsublime
+### Colorsublime
 这个插件安装完成后又好多主题可以设置  
 安装完成配置命令：
 

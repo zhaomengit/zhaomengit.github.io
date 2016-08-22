@@ -6,7 +6,8 @@ comments: true
 category: Python
 tags: Python
 ---
-###defaultdict Examples
+### defaultdict Examples
+
 `collections.defaultdict`是`dict`的一个子类，定义是
 
     class collections.defaultdict([default_factory[, ...]]) 
@@ -34,7 +35,7 @@ KeyError: 'x'
 
 可以看出当使用`__getitem__()`方法访问一个不存在的键时(`dict[key]`这种形式实际上是`__getitem__()`方法的简化形式)，会调用`__missing__()`方法获取默认值，并将该键添加到字典中去。`dict`会使用`__getitem__()`来返回值，值不存在会返回`None`而不是`default_factory`。在`key`值不存在的条件下，如果`default_factory`不为`None`，会使用`default_factory`构造一个默认值，赋值给`dict[key]`
 
-####example 1
+#### example 1
 
 ```
 >>> s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
@@ -47,7 +48,7 @@ KeyError: 'x'
 [('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
 ```
 
-####example 2
+#### example 2
 `dict.setdefault()`方法接收两个参数，第一个参数是健的名称，第二个参数是默认值。假如字典中不存在给定的键，则返回参数中提供的默认值；反之，则返回字典中保存的值。
 
 ```
@@ -59,7 +60,7 @@ KeyError: 'x'
 [('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
 ```
 
-####example 3
+#### example 3
 字符第一次出现，dict中没有键值，`default_factory`调用`int()`构造一个默认值
 
 ```
@@ -73,7 +74,8 @@ KeyError: 'x'
 [('i', 4), ('p', 2), ('s', 4), ('m', 1)]
 ```
 
-####example 4
+#### example 4
+
 可以通过函数初始化：
 `itertools.repeat(value).next`是`itertools.repeat`一个函数,传入的是函数名，确保能够被调用
 
@@ -89,7 +91,7 @@ defaultdict(<method-wrapper 'next' of itertools.repeat object at 0x00000000022F8
 {'action': 'ran', 'object': '<missing>', 'name': 'John'})
 ```
 
-####example 5
+#### example 5
 
 ```
 >>> s = [('red', 1), ('blue', 2), ('red', 3), ('blue', 4), ('red', 1), ('blue', 4)]

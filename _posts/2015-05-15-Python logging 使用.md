@@ -7,7 +7,7 @@ category: Python
 tag: Python
 ---
 
-###Python日志记录logigng模块
+### Python日志记录logigng模块
 
 简单使用,代码如下：
 
@@ -32,7 +32,7 @@ logger.info('the loggint print')
 
 ```
 
-###给日志设置LoggerAdapter
+### 给日志设置LoggerAdapter
 
 在LoggerAdapter代码如下
 

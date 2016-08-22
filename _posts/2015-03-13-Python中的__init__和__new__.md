@@ -6,7 +6,9 @@ comments: true
 category: Python
 tags: Python
 ---
-###`__init__`方法
+
+### `__init__`方法
+
 `__init__(self, […)`此方法为类的初始化方法。当构造函数被调用的时候的任何参数都将会传给它。(比如如果我们调用 x = SomeClass(10, 'foo'))，那么 `__init__` 将会得到两个参数10和foo。 `__init__` 在Python的类定义中被广泛用到。
 
 注意：参数self是类的实例，已经创建完成，通过`__init__`添加改变属性等。
@@ -21,7 +23,7 @@ tags: Python
     12.0
     >>> 
 
-###`__new__`方法
+### `__new__`方法
 `__new__(cls, [...) ` `__new__` 是在一个对象实例化的时候所调用的第一个方法。它的第一个参数是这个类，其他的参数是用来直接传递给 `__init__` 方法。 `__new__` 方法相当不常用,但是它有自己的特性，特别是当继承一个**不可变**的类型比如一个tuple或者string。
 
     >>> class inch(float):
@@ -33,7 +35,7 @@ tags: Python
     0.3048
     >>>
 
-###举例
+### 举例
 `__new__`返回的一定是类对象，`__new__`执行完之后，就执行返回对象的`__int__`函数。
 看下面的例子：（只是用来测试，实际不这么用）
 
@@ -65,7 +67,7 @@ print isinstance(t, A)
 
 创建对象的时候调用了Test的`__new__`，然后调用了A的`__int__`
 
-###总结：`object.__new__(cls[, ...])`
+### 总结：`object.__new__(cls[, ...])`
 
 1. `__new__`是一个静态方法，第一个参数是这个类本身(如果外面调用必须是类)，其余的参数供构造函数使用
 2. 返回一个实例，然后调用该实例的`__init__`方法
@@ -85,7 +87,7 @@ a = A()
 # outputs: a __init__ 
 ```
 
-###实现单例
+### 实现单例
 
 ```python
 class Singleton(object):
@@ -113,6 +115,6 @@ y = MySingleton()
 assert x is y
 ```
 
-###参考资料：
+### 参考资料：
 1. [官方文档：Unifying types and classes in Python 2.2](https://www.python.org/download/releases/2.2/descrintro/#cooperation)
 2. [Python 魔术方法指南](http://pycoders-weekly-chinese.readthedocs.org/en/latest/issue6/a-guide-to-pythons-magic-methods.html)

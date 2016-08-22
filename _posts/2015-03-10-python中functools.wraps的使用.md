@@ -6,7 +6,9 @@ comments: true
 category: Python
 tags: 函数式编程
 ---
-###functools中@waps
+
+### functools中@waps
+
 使用装饰器的一个副作用就是，装饰之后函数丢失了它本来的`__name__`,`__doc__`及`__module__`属性。
 
 ```python
@@ -63,7 +65,8 @@ print example.__doc__
     >>>Docstring
     
 
-###@wraps实现原理
+### @wraps实现原理
+
 上面的例子，函数的调用顺序是:
 
     example() -> my_decorator(example)() -> 
@@ -121,7 +124,7 @@ def update_wrapper(wrapper,
     return wrapper
 ```
 
-###partial函数的使用
+### partial函数的使用
 Python 中有个 `int([x[,base]])` 函数，作用是把字符串转换为一个普通的整型。
 如果要把所有输入的二进制数转为整型，那么就要这样写 `int('11', base=2)`。这样写起来貌似不太方便，那么我们就能用 partial 来实现值传递一个参数就能转换二进制数转为整型的方法。
 
@@ -133,7 +136,7 @@ print int2('11') # 3
 print int2('101') # 5
 ```
 
-###附录：完整的实现（没有使用库函数）
+### 附录：完整的实现（没有使用库函数）
 
 ```python
 def partial_t(func, *args, **keywords):

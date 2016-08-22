@@ -9,7 +9,7 @@ tags: Python
 代码记忆是一种避免潜在的重复计算开销的方法。你通过缓存一个函数每次运行的结果来达到此目的。 
 这样，下一次函数以同样的参数运行时，它将从缓存中返回结果，并不需要花费额外的时间来计算结果。
 
-###一个简单的例子
+### 一个简单的例子
 
 ```python
 factorial_memo = {}
@@ -21,7 +21,7 @@ def factorial(k):
 ```
 通过factorial_memo这个dict来缓存结果.计算factorial(k)如果k已经计算过,在factorial_memo中会有缓存,直接返回
 
-###用类实现
+### 用类实现
 
 ```python
 class Memoize:
@@ -39,7 +39,7 @@ def factorial(k):
 
 factorial = Memoize(factorial)
 ```
-###用装饰器实现
+### 用装饰器实现
 
 ```python
 from functools import wraps

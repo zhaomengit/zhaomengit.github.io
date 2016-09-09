@@ -19,7 +19,11 @@ Python中执行`shell`脚本可以通过`commands`模块中的`commands.getstatu
 
 ```python
 import subprocess
-p = subprocess.Popen(['tail','-10','/tmp/hosts.txt'],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,shell=False)
+p = subprocess.Popen(['tail','-10','/tmp/hosts.txt'],
+                     stdin=subprocess.PIPE,
+                     stdout=subprocess.PIPE,
+                     stderr=subprocess.PIPE,
+                     shell=False)
 
 stdout,stderr = p.communicate()
 print 'stdout : ',stdout
@@ -33,7 +37,10 @@ popen调用的时候会在父进程和子进程建立管道，然后我们可以
 主要是用来获取实时的输出信息
 
 ```python
-p = subprocess.Popen("/etc/service/tops-cmos/module/hadoop/test.sh", shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+p = subprocess.Popen("/etc/service/tops-cmos/module/hadoop/test.sh",
+                     shell=True,
+                     stdout=subprocess.PIPE,
+                     stderr=subprocess.STDOUT)
 returncode = p.poll()
 while returncode is None:
         line = p.stdout.readline()

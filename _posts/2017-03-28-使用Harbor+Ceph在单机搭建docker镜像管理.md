@@ -4,7 +4,7 @@ title: "使用Harbor+Ceph在单机搭建docker镜像管理"
 date: 2017-03-28
 comments: true
 category: docker
-tags: docker,ceph,harbor
+tags: [docker, ceph, harbor]
 ---
 
 ## 1.背景
